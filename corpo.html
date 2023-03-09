@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var NomePessoa = prompt('insira seu Nome')
+        var Altura = prompt('insira sua altura em cm')
+        var Peso = prompt('insira seu Peso Corporal em kg')
+
+        Altura = Altura / 100
+        M = Peso / Math.pow(Altura,2);
+
+        if(M < 16 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Baixo peso muito grave' )
+        }
+        if(M > 16 && M < 16.99){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Baixo peso  grave' )
+        }        
+        if(M > 17 && M < 18.49 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Baixo peso' )
+        }
+        if(M > 18.50 && M < 24.99 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como peso normal' )
+        }
+        if(M > 25 && M < 29.99 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como sobrepeso ' )
+        }
+        if(M > 30 && M < 34.99 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Obesidade I' )
+        }
+        if(M > 35 && M < 39.99 ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Obesidade II' )
+        }
+        if(M > 40  ){
+            document.write(NomePessoa +' Possui índice de massa corporal de ' + (M).toFixed(2) +', sendo classificado como Obesidade III' )
+       
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
